@@ -6,10 +6,32 @@ import Hello from './reactintro/v8Hello';
 import V9VarProps from './reactintro/v9Props';
 import V10Messge from './reactintro/V10Messge';
 import V9PropsInComponent from './reactintro/v9PropsInClassComponents';
+import V11Counter from './reactintro/V11Counter';
+import V12DestructuringPropsAndState from './reactintro/V12DestructuringPropsAndState';
+import V12DestructuringPropsAndStateInClassCom from './reactintro/V12DestructuringPropsAndStateInClassCom';
+import V13ClassClick from './reactintro/V13ClassClick';
+import V13FunctionClick from './reactintro/V13FunctionClick';
+import V14EventBind from './reactintro/V14EventBind';
+import V15ParentComponent from './reactintro/V15ParentComponent';
 
 function App() {
   return (
     <div className="App">
+      <p>-----------------------Video 15 Methods as Props-----------------</p>
+      <V15ParentComponent></V15ParentComponent>
+      <p>-----------------------Video 14 Event Binding-----------------</p>
+      <V14EventBind></V14EventBind>
+      <p>-----------------------Video 13 Event Handling-----------------</p>
+      <V13FunctionClick></V13FunctionClick>
+      <V13ClassClick></V13ClassClick>
+      <p>-----------------------Video 12 Destructruing props and state-----------------</p>
+      <V12DestructuringPropsAndState name="skrish" heroName="suyambu"></V12DestructuringPropsAndState>
+      <V12DestructuringPropsAndStateInClassCom name="skrish" heroName="suyambu"></V12DestructuringPropsAndStateInClassCom>
+      <p>-----------------------Video 11 Related to State-----------------</p>
+      <p>-----------------------Video 11 Point1- Always make use of setState and never modify the state directly-----------------</p>
+      <p>-----------------------Video 11 Point2- Code has to be executed after the state has been updated? Place that code in the call back function which is the second argument to the setState method----------------</p>
+      <p>-----------------------Video 11 Point3- When you have to update state based on the previous state value, pass in a function as an argument instead of the regular object----------------</p>
+      <V11Counter></V11Counter>
       <p>-----------------------Video 10 State-----------------</p>
       <V10Messge></V10Messge>
       <p>-----------------------Video 9 Props-----------------</p>
