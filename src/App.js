@@ -13,10 +13,30 @@ import V13ClassClick from './reactintro/V13ClassClick';
 import V13FunctionClick from './reactintro/V13FunctionClick';
 import V14EventBind from './reactintro/V14EventBind';
 import V15ParentComponent from './reactintro/V15ParentComponent';
+import V16ConditionalRendering from './reactintro/V16ConditionalRendering';
+import V17NameList from './reactintro/V17NameList';
+import V20Stylesheets from './reactintro/V20Stylesheets';
+import V20InlineStyleSheet from './reactintro/V20InlineStyleSheet';
+import styles from './reactintro/appStyles.module.css';
+import './reactintro/appStyles.css';
+import V21Forms from './reactintro/V21Forms';
 
 function App() {
   return (
     <div className="App">
+    <p>-----------------------Video 21 Basic Forms-----------------</p>
+      <V21Forms primary={true}></V21Forms>
+      <p>-----------------------Video 20 Styling Component-----------------</p>
+      <V20Stylesheets primary={true}></V20Stylesheets>
+      <V20InlineStyleSheet></V20InlineStyleSheet>
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      <p>-----------------------Video 17, 18 and 19  List Rendering-----------------</p>
+      <V17NameList></V17NameList>
+      <p>-----------------------Video 16 Conditional Rendering-----------------</p>
+      <V16ConditionalRendering></V16ConditionalRendering>
+
+
       <p>-----------------------Video 15 Methods as Props-----------------</p>
       <V15ParentComponent></V15ParentComponent>
       <p>-----------------------Video 14 Event Binding-----------------</p>
