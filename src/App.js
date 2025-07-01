@@ -20,11 +20,80 @@ import V20InlineStyleSheet from './reactintro/V20InlineStyleSheet';
 import styles from './reactintro/appStyles.module.css';
 import './reactintro/appStyles.css';
 import V21Forms from './reactintro/V21Forms';
+import V23MountingLifeCycle from './reactintro/V23MountingLifeCycle';
+import V25FragmentDemo from './reactintro/V25FragmentDemo';
+
+
 
 function App() {
   return (
     <div className="App">
-    <p>-----------------------Video 21 Basic Forms-----------------</p>
+
+      <p>-----------------------Video 25 React Fragments-----------------</p>
+      <V25FragmentDemo></V25FragmentDemo>
+      <p>-----------------------Video 23 and 24 Component Mounting, Updating Lifecycle-----------------</p>
+      <V23MountingLifeCycle></V23MountingLifeCycle>
+      <p>-----------------------Video 22 Component Lifecycle method-----------------</p>
+      <ul>
+        <li>
+          -----Mounting-----
+          <ul>
+            <li>
+              Constructor
+            </li>
+            <li>
+              static getDerivedStateFromProps
+            </li>
+            <li>
+              render
+            </li>
+            <li>
+              ComponentDidMount
+            </li>
+          </ul>
+        </li>
+        <li>
+          -----Updating-----
+          <ul>
+            <li>
+              static getDerivedStateFromProps
+            </li>
+            <li>
+              shouldComponentUpdate
+            </li>
+            <li>
+              render
+            </li>
+            <li>
+              getSnapshotBeforeUpdate
+            </li>
+            <li>
+              ComponentDidUpdate
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          -----UnMounting-----
+          <ul>
+            <li>
+              ComponentWillUnMount
+            </li>
+          </ul>
+        </li>
+        <li>
+          -----Error Handling-----
+          <ul>
+            <li>
+              getDerivedStateFromError
+            </li>
+            <li>
+              ComponentDidCatch
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>-----------------------Video 21 Basic Forms-----------------</p>
       <V21Forms primary={true}></V21Forms>
       <p>-----------------------Video 20 Styling Component-----------------</p>
       <V20Stylesheets primary={true}></V20Stylesheets>
