@@ -22,15 +22,20 @@ import './reactintro/appStyles.css';
 import V21Forms from './reactintro/V21Forms';
 import V23MountingLifeCycle from './reactintro/V23MountingLifeCycle';
 import V25FragmentDemo from './reactintro/V25FragmentDemo';
+import V25Table from './reactintro/V25Table';
+import V26ParentComp from './reactintro/V26ParentComp';
+
 
 
 
 function App() {
   return (
     <div className="App">
-
+      <p>-----------------------Video 26 Pure Component-----------------</p>
+      <V26ParentComp></V26ParentComp>
       <p>-----------------------Video 25 React Fragments-----------------</p>
       <V25FragmentDemo></V25FragmentDemo>
+      <V25Table></V25Table>
       <p>-----------------------Video 23 and 24 Component Mounting, Updating Lifecycle-----------------</p>
       <V23MountingLifeCycle></V23MountingLifeCycle>
       <p>-----------------------Video 22 Component Lifecycle method-----------------</p>
