@@ -24,6 +24,7 @@ import V23MountingLifeCycle from './reactintro/V23MountingLifeCycle';
 import V25FragmentDemo from './reactintro/V25FragmentDemo';
 import V25Table from './reactintro/V25Table';
 import V26ParentComp from './reactintro/V26ParentComp';
+import V27MemoComp from './reactintro/V27MemoComp';
 
 
 
@@ -31,6 +32,8 @@ import V26ParentComp from './reactintro/V26ParentComp';
 function App() {
   return (
     <div className="App">
+      <p>-----------------------Video 27 Memo Component-----------------</p>
+      <V27MemoComp></V27MemoComp>
       <p>-----------------------Video 26 Pure Component-----------------</p>
       <V26ParentComp></V26ParentComp>
       <p>-----------------------Video 25 React Fragments-----------------</p>
