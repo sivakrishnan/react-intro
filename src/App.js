@@ -25,13 +25,23 @@ import V25FragmentDemo from './reactintro/V25FragmentDemo';
 import V25Table from './reactintro/V25Table';
 import V26ParentComp from './reactintro/V26ParentComp';
 import V27MemoComp from './reactintro/V27MemoComp';
-
-
+import V28RefsDemo from './reactintro/V28RefsDemo';
+import V29FocusInput from './reactintro/V29FocusInput';
+import V30FRDParentInput from './reactintro/V30FRDParentInput';
+import V31PortalDemo from './reactintro/V31PortalDemo';
 
 
 function App() {
   return (
     <div className="App">
+       <p>-----------------------Video 31 Portals-----------------</p>
+       <V31PortalDemo></V31PortalDemo>
+      <p>-----------------------Video 30 Forwarding Refs-----------------</p>
+      <V30FRDParentInput></V30FRDParentInput>
+      <p>-----------------------Video 29 Refs in class component-----------------</p>
+      <V29FocusInput></V29FocusInput>
+      <p>-----------------------Video 28 Refs Demo-----------------</p>
+      <V28RefsDemo></V28RefsDemo>
       <p>-----------------------Video 27 Memo Component-----------------</p>
       <V27MemoComp></V27MemoComp>
       <p>-----------------------Video 26 Pure Component-----------------</p>

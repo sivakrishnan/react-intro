@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import V26RegComp from './V26RegComp';
 import V26PureComp from './V26PureComp';
+import V27MemoComp from './V27MemoComp';
 
 export class V26ParentComp extends Component {
     constructor(props) {
@@ -22,12 +23,13 @@ export class V26ParentComp extends Component {
         return (
             <div>
                 Parent Component
-                <V26RegComp name={this.state.name}>
+                <V27MemoComp name={this.state.name}></V27MemoComp>
+                {/* <V26RegComp name={this.state.name}>
 
                 </V26RegComp>
                 <V26PureComp name={this.state.name}>
 
-                </V26PureComp>
+                </V26PureComp> */}
             </div>
         )
     }
