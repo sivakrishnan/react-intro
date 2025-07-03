@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
-export class V26RegComp extends Component {
+export class V26RegComp extends PureComponent {
   static propTypes = {}
 
   render() {

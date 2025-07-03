@@ -29,13 +29,34 @@ import V28RefsDemo from './reactintro/V28RefsDemo';
 import V29FocusInput from './reactintro/V29FocusInput';
 import V30FRDParentInput from './reactintro/V30FRDParentInput';
 import V31PortalDemo from './reactintro/V31PortalDemo';
+import V32Hero from './reactintro/V32Hero';
+import V32ErrorBoundary from './reactintro/V32ErrorBoundary';
+import V33ClickCounter from './reactintro/V33ClickCounter';
+import V33HoverCounter from './reactintro/V33HoverCounter';
+import V36ClickCounterTwo from './reactintro/V36ClickCounterTwo';
+import V36HoverCounterTwo from './reactintro/V36HoverCounterTwo';
 
 
 function App() {
   return (
     <div className="App">
-       <p>-----------------------Video 31 Portals-----------------</p>
-       <V31PortalDemo></V31PortalDemo>
+
+      <p>-----------------------Video 36 Render Props-----------------</p>
+      <V36ClickCounterTwo></V36ClickCounterTwo>
+      <V36HoverCounterTwo hofProps="test"></V36HoverCounterTwo>
+
+      <p>-----------------------Video 33 Higher Order Components-----------------</p>
+      <V33ClickCounter hofProps="test"></V33ClickCounter>
+      <V33HoverCounter></V33HoverCounter>
+      <p>-----------------------Video 32 Error Boundary-----------------</p>
+      <V32ErrorBoundary>
+        <V32Hero heroName="batman"></V32Hero>
+        <V32Hero heroName="superman"></V32Hero>
+        <V32Hero heroName="joker"></V32Hero>
+      </V32ErrorBoundary>
+
+      <p>-----------------------Video 31 Portals-----------------</p>
+      <V31PortalDemo></V31PortalDemo>
       <p>-----------------------Video 30 Forwarding Refs-----------------</p>
       <V30FRDParentInput></V30FRDParentInput>
       <p>-----------------------Video 29 Refs in class component-----------------</p>
@@ -45,7 +66,7 @@ function App() {
       <p>-----------------------Video 27 Memo Component-----------------</p>
       <V27MemoComp></V27MemoComp>
       <p>-----------------------Video 26 Pure Component-----------------</p>
-      <V26ParentComp></V26ParentComp>
+      {/* <V26ParentComp></V26ParentComp> */}
       <p>-----------------------Video 25 React Fragments-----------------</p>
       <V25FragmentDemo></V25FragmentDemo>
       <V25Table></V25Table>

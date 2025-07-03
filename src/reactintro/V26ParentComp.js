@@ -23,7 +23,7 @@ export class V26ParentComp extends Component {
         return (
             <div>
                 Parent Component
-                <V27MemoComp name={this.state.name}></V27MemoComp>
+                {/* <V27MemoComp name={this.state.name}></V27MemoComp> */}
                 {/* <V26RegComp name={this.state.name}>
 
                 </V26RegComp>
