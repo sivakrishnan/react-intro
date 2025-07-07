@@ -2,27 +2,28 @@ import React, { Component } from 'react'
 
 export class V36HoverCounterTwo extends Component {
 
-    constructor(props) {
-        super(props)
+    //moved this common code to v37countercommon.js file
+    // constructor(props) {
+    //     super(props)
 
-        this.state = {
-            count: 0
-        }
-    }
+    //     this.state = {
+    //         count: 0
+    //     }
+    // }
 
-    incrementCount = () => {
-        this.setState((prevState) => {
-            return { count: prevState.count + 1 };
-        }, () => {
-            console.log(this.state.count);
-        })
-    }
+    // incrementCount = () => {
+    //     this.setState((prevState) => {
+    //         return { count: prevState.count + 1 };
+    //     }, () => {
+    //         console.log(this.state.count);
+    //     })
+    // }
 
     render() {
-        const { count } = this.state;
+        const { count, incrementCount } = this.props;
         return (
             <div>
-                <h2 onMouseOver={this.incrementCount}> Hovered {count} times</h2>
+                <h2 onMouseOver={incrementCount}> Hovered {count} times</h2>
             </div>
         )
     }

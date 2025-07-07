@@ -35,15 +35,29 @@ import V33ClickCounter from './reactintro/V33ClickCounter';
 import V33HoverCounter from './reactintro/V33HoverCounter';
 import V36ClickCounterTwo from './reactintro/V36ClickCounterTwo';
 import V36HoverCounterTwo from './reactintro/V36HoverCounterTwo';
+import V37User from './reactintro/V37User';
+import V37CounterCommon from './reactintro/V37CounterCommon';
 
 
 function App() {
   return (
     <div className="App">
 
+      <p>-----------------------Video 37 Render Props Implement-----------------</p>
+      <V37CounterCommon render={(count, incrementCount) => (
+        <V36ClickCounterTwo count={count} incrementCount={incrementCount}></V36ClickCounterTwo>
+      )}>
+      </V37CounterCommon>
+
+      <V37CounterCommon render={(count, incrementCount) => (
+        <V36HoverCounterTwo count={count} incrementCount={incrementCount}></V36HoverCounterTwo>
+      )}>
+      </V37CounterCommon>
+
       <p>-----------------------Video 36 Render Props-----------------</p>
       <V36ClickCounterTwo></V36ClickCounterTwo>
       <V36HoverCounterTwo hofProps="test"></V36HoverCounterTwo>
+      <V37User render={(isLoggedIn) => isLoggedIn ? 'Skrish' : 'Guest'}></V37User>
 
       <p>-----------------------Video 33 Higher Order Components-----------------</p>
       <V33ClickCounter hofProps="test"></V33ClickCounter>
