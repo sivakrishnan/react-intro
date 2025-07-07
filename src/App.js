@@ -37,11 +37,20 @@ import V36ClickCounterTwo from './reactintro/V36ClickCounterTwo';
 import V36HoverCounterTwo from './reactintro/V36HoverCounterTwo';
 import V37User from './reactintro/V37User';
 import V37CounterCommon from './reactintro/V37CounterCommon';
+import V39ComponentC from './reactintro/V39ComponentC';
+import { UserProvider } from './reactintro/V39UserContext';
+
 
 
 function App() {
+
   return (
     <div className="App">
+
+      <p>-----------------------Video 38 39 40 Context----------------</p>
+      <UserProvider value={'skrish'}>
+        <V39ComponentC />
+      </UserProvider>
 
       <p>-----------------------Video 37 Render Props Implement-----------------</p>
       <V37CounterCommon render={(count, incrementCount) => (
