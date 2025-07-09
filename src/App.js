@@ -39,14 +39,19 @@ import V37User from './reactintro/V37User';
 import V37CounterCommon from './reactintro/V37CounterCommon';
 import V39ComponentC from './reactintro/V39ComponentC';
 import { UserProvider } from './reactintro/V39UserContext';
-
-
+import V42PostList from './reactintro/V42PostList';
+import V43PostForm from './reactintro/V43PostForm';
 
 function App() {
 
   return (
     <div className="App">
-
+      <p>-----------------------Video 42 HTTP Get ----------------</p>
+      <V43PostForm>
+        
+      </V43PostForm>
+      <V42PostList>
+      </V42PostList>
       <p>-----------------------Video 38 39 40 Context----------------</p>
       <UserProvider value={'skrish'}>
         <V39ComponentC />
